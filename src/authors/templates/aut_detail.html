@@ -1,0 +1,20 @@
+{% extends "base.html"%}
+
+{% block title}
+List book
+{% endblock title% }
+
+{% block body %}
+    <h1>Detail</h1>
+    ФИО {{ object.name }} <br>
+    Дата рождения {{ object.date_of_birth }} <br>
+    Страна {{ object.country }} <br>
+    Описание {{ object.description }} <br>
+    
+   
+    
+{% endblock body %}
+    
+{% block footer %}    
+    footer from last page
+{% endblock footer %} 

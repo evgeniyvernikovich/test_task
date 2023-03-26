@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+
+{% block title}
+List book
+{% endblock title% }
+
+{% block body %}
+    <h1>Delete</h1>
+    Name {{ object.name }}
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Submit">
+    </form>
+    
+{% endblock body %}
+    
+{% block footer %}    
+    footer from last page
+{% endblock footer %} 
